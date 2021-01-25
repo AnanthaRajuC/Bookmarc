@@ -19,7 +19,8 @@
 
 |     Service     | Badge | Badge | Badge | Badge | Badge |
 |-----------------|-------|-------|-------|-------|-------|
-|  **GitHub**     |[![GitHub last commit](https://img.shields.io/github/last-commit/anantharajuc/Spring-Boot-Application-Template)](https://github.com/AnanthaRajuC/Bookmarc/commits/master)|[![GitHub pull requests](https://img.shields.io/github/issues-pr-raw/AnanthaRajuC/Bookmarc)](https://github.com/AnanthaRajuC/Bookmarc/pulls)|[![GitHub issues](https://img.shields.io/github/issues/AnanthaRajuC/Bookmarc)](https://github.com/AnanthaRajuC/Bookmarc/issues)|[![GitHub forks](https://img.shields.io/github/forks/AnanthaRajuC/Bookmarc)](https://github.com/AnanthaRajuC/Bookmarc/network)|[![GitHub stars](https://img.shields.io/github/stars/AnanthaRajuC/Bookmarc)](https://github.com/AnanthaRajuC/Bookmarc/stargazers)|
+|  **GitHub**     |[![GitHub last commit](https://img.shields.io/github/last-commit/anantharajuc/Spring-Boot-Application-Template)](https://github.com/AnanthaRajuC/Bookmarc/commits/master)[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FAnanthaRajuC%2FBookmarc.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FAnanthaRajuC%2FBookmarc?ref=badge_shield)
+|[![GitHub pull requests](https://img.shields.io/github/issues-pr-raw/AnanthaRajuC/Bookmarc)](https://github.com/AnanthaRajuC/Bookmarc/pulls)|[![GitHub issues](https://img.shields.io/github/issues/AnanthaRajuC/Bookmarc)](https://github.com/AnanthaRajuC/Bookmarc/issues)|[![GitHub forks](https://img.shields.io/github/forks/AnanthaRajuC/Bookmarc)](https://github.com/AnanthaRajuC/Bookmarc/network)|[![GitHub stars](https://img.shields.io/github/stars/AnanthaRajuC/Bookmarc)](https://github.com/AnanthaRajuC/Bookmarc/stargazers)|
 |  **GitHub**     |![GitHub repo size](https://img.shields.io/github/repo-size/AnanthaRajuC/Bookmarc)|![GitHub top language](https://img.shields.io/github/languages/top/AnanthaRajuC/Bookmarc.svg)|![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/AnanthaRajuC/Bookmarc)|![GitHub tag (latest SemVer)](https://img.shields.io/github/tag/AnanthaRajuC/Bookmarc.svg)|![GitHub language count](https://img.shields.io/github/languages/count/AnanthaRajuC/Bookmarc)|
 
 [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Checkout+this+portable+web+browser+bookmark+manager&url=https://github.com/AnanthaRajuC/Bookmarc&hashtags=WebBrowser) [![Twitter Follow](https://img.shields.io/twitter/follow/anantharajuc?label=follow%20me&style=social)](https://twitter.com/anantharajuc)
@@ -261,6 +262,9 @@ Kindly refer to [CONTRIBUTING.md](/CONTRIBUTING.md) for important **Pull Request
 See `LICENSE` for more information.
 
 <!-- CONTACT -->
+
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FAnanthaRajuC%2FBookmarc.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FAnanthaRajuC%2FBookmarc?ref=badge_large)
+
 ## Contact
 
 Anantha Raju C - [@anantharajuc](https://twitter.com/anantharajuc) - arcswdev@gmail.com
