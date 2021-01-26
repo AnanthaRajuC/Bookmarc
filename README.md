@@ -17,6 +17,10 @@
 	<a href="https://github.com/AnanthaRajuC/Bookmarc/issues">Request Feature</a>
 </p>
 
+| [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/edge/edge_48x48.png" alt="IE / Edge" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>IE / Edge | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/firefox/firefox_48x48.png" alt="Firefox" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Firefox | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/chrome/chrome_48x48.png" alt="Chrome" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Chrome | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari/safari_48x48.png" alt="Safari" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Safari | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari-ios/safari-ios_48x48.png" alt="iOS Safari" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>iOS Safari | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/samsung-internet/samsung-internet_48x48.png" alt="Samsung" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Samsung | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/opera/opera_48x48.png" alt="Opera" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Opera |
+| --------- | --------- | --------- | --------- | --------- | --------- | --------- |
+| Test Pending| Test Pending| supported | Test Pending| Test Pending| Test Pending| Test Pending
+
 |     Service     | Badge | Badge | Badge | Badge | Badge |
 |-----------------|-------|-------|-------|-------|-------|
 |  **GitHub**     |[![GitHub last commit](https://img.shields.io/github/last-commit/anantharajuc/Spring-Boot-Application-Template)](https://github.com/AnanthaRajuC/Bookmarc/commits/master)|[![GitHub pull requests](https://img.shields.io/github/issues-pr-raw/AnanthaRajuC/Bookmarc)](https://github.com/AnanthaRajuC/Bookmarc/pulls)|[![GitHub issues](https://img.shields.io/github/issues/AnanthaRajuC/Bookmarc)](https://github.com/AnanthaRajuC/Bookmarc/issues)|[![GitHub forks](https://img.shields.io/github/forks/AnanthaRajuC/Bookmarc)](https://github.com/AnanthaRajuC/Bookmarc/network)|[![GitHub stars](https://img.shields.io/github/stars/AnanthaRajuC/Bookmarc)](https://github.com/AnanthaRajuC/Bookmarc/stargazers)|
@@ -26,6 +30,8 @@
 [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Checkout+this+portable+web+browser+bookmark+manager&url=https://github.com/AnanthaRajuC/Bookmarc&hashtags=WebBrowser) [![Twitter Follow](https://img.shields.io/twitter/follow/anantharajuc?label=follow%20me&style=social)](https://twitter.com/anantharajuc)
 
 ## Important Note: This project's new milestone is to improve performance when processing bookmarks in the thousands, so stay tuned.
+
+Update `chrome.bookmarks.file.windows` in application properties file with your computer's username.
 
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
