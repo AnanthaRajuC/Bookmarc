@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" 
+			    xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" 
+			    xmlns:with="http://www.thymeleaf.org/extras/with"
+			   layout:decorate="~{layout}"
+				 with:title="'Settings'">
+	  
+	<th:block layout:fragment="content">
+
+	<h1 class="display-4">Hello, world!</h1>
+	<p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+	<hr class="my-4">
+	<p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+	
+</br>
+
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home"
+      aria-selected="true">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile"
+      aria-selected="false">Profile</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact"
+      aria-selected="false">Contact</a>
+  </li>
+</ul>
+
+<div class="tab-content" id="myTabContent">
+
+  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+    <div class="card-body" role="tabpanel">
+    <h5 class="card-title">Special title treatment</h5>
+    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    <a href="/bookmark/export-bookmark" class="btn btn-primary"><i class="fa fa-download" aria-hidden="true"></i> Export Bookmark</a>
+  </div>
+	</div>
+	
+  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab"> 
+  <div class="card-body" role="tabpanel">
+  
+  <div class="container">
+    <div class="row">
+        <div class="col-lg-8 mt-5">
+
+            <div th:if="${message}">
+                <h2 th:text="${message}"/>
+            </div>
+
+            <form method="POST" enctype="multipart/form-data" action="/bookmark/upload">
+			
+                <div class="form-group">
+                    <div class="custom-file">
+                        <input type="file" class="custom-file-input" id="customFile" name="file">
+                        <label class="custom-file-label" for="customFile">Choose file</label>
+                    </div>
+                </div>
+
+                <button class="btn btn-primary" type="submit">Submit form</button>
+            </form>
+
+        </div>
+    </div>
+	</div>
+    
+  </div>  
+ </div>
+	
+  <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+    <div class="card-body" role="tabpanel">
+	
+	<h5 class="card-title">Import File</h5>
+    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    <a href="/bookmark/import-bookmark" class="btn btn-primary"><i class="fa fa-upload" aria-hidden="true"></i> Import Bookmark</a>
+	
+	<!-- <div class="container">
+    <div class="row">
+        <div class="col-lg-8 mt-5">
+
+            <div th:if="${message}">
+                <h2 th:text="${message}"/>
+            </div>
+
+            <form method="POST" enctype="multipart/form-data" action="/bookmark/upload">
+                <div class="form-group">
+                    <div class="custom-file">
+                        <input type="file" class="custom-file-input" id="customFile" name="file">
+                        <label class="custom-file-label" for="customFile">Choose file</label>
+                    </div>
+                </div>
+
+                <button class="btn btn-primary" type="submit">Submit form</button>
+            </form>
+
+        </div>
+    </div>
+	
+     </div>-->
+  </div>
+  
+    </div>
+	
+	</br>
+	
+	<!--<script>
+		bsCustomFileInput.init();
+	</script> -->
+	
+	</th:block>
+	
+</html>

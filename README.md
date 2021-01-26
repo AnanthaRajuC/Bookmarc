@@ -19,13 +19,13 @@
 
 |     Service     | Badge | Badge | Badge | Badge | Badge |
 |-----------------|-------|-------|-------|-------|-------|
-|  **GitHub**     |[![GitHub last commit](https://img.shields.io/github/last-commit/anantharajuc/Spring-Boot-Application-Template)](https://github.com/AnanthaRajuC/Bookmarc/commits/master)[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FAnanthaRajuC%2FBookmarc.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FAnanthaRajuC%2FBookmarc?ref=badge_shield)
-|[![GitHub pull requests](https://img.shields.io/github/issues-pr-raw/AnanthaRajuC/Bookmarc)](https://github.com/AnanthaRajuC/Bookmarc/pulls)|[![GitHub issues](https://img.shields.io/github/issues/AnanthaRajuC/Bookmarc)](https://github.com/AnanthaRajuC/Bookmarc/issues)|[![GitHub forks](https://img.shields.io/github/forks/AnanthaRajuC/Bookmarc)](https://github.com/AnanthaRajuC/Bookmarc/network)|[![GitHub stars](https://img.shields.io/github/stars/AnanthaRajuC/Bookmarc)](https://github.com/AnanthaRajuC/Bookmarc/stargazers)|
+|  **GitHub**     |[![GitHub last commit](https://img.shields.io/github/last-commit/anantharajuc/Spring-Boot-Application-Template)](https://github.com/AnanthaRajuC/Bookmarc/commits/master)|[![GitHub pull requests](https://img.shields.io/github/issues-pr-raw/AnanthaRajuC/Bookmarc)](https://github.com/AnanthaRajuC/Bookmarc/pulls)|[![GitHub issues](https://img.shields.io/github/issues/AnanthaRajuC/Bookmarc)](https://github.com/AnanthaRajuC/Bookmarc/issues)|[![GitHub forks](https://img.shields.io/github/forks/AnanthaRajuC/Bookmarc)](https://github.com/AnanthaRajuC/Bookmarc/network)|[![GitHub stars](https://img.shields.io/github/stars/AnanthaRajuC/Bookmarc)](https://github.com/AnanthaRajuC/Bookmarc/stargazers)|
 |  **GitHub**     |![GitHub repo size](https://img.shields.io/github/repo-size/AnanthaRajuC/Bookmarc)|![GitHub top language](https://img.shields.io/github/languages/top/AnanthaRajuC/Bookmarc.svg)|![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/AnanthaRajuC/Bookmarc)|![GitHub tag (latest SemVer)](https://img.shields.io/github/tag/AnanthaRajuC/Bookmarc.svg)|![GitHub language count](https://img.shields.io/github/languages/count/AnanthaRajuC/Bookmarc)|
+|    **lgtm**     |[![lgtm-languages](https://badgen.net/lgtm/langs/g/AnanthaRajuC/Bookmarc)](https://lgtm.com/projects/g/AnanthaRajuC/Bookmarc?mode=list)|[![lgtm-alerts](https://badgen.net/lgtm/alerts/g/AnanthaRajuC/Bookmarc)](https://lgtm.com/projects/g/AnanthaRajuC/Bookmarc?mode=list)|[![lgtm-lines](https://badgen.net/lgtm/lines/g/AnanthaRajuC/Bookmarc)](https://lgtm.com/projects/g/AnanthaRajuC/Bookmarc?mode=list)|[![lgtm-lines-java](https://badgen.net/lgtm/lines/g/AnanthaRajuC/Bookmarc/java)](https://lgtm.com/projects/g/AnanthaRajuC/Bookmarc?mode=list)|[![lgtm-grade](https://badgen.net/lgtm/grade/g/AnanthaRajuC/Bookmarc)](https://lgtm.com/projects/g/AnanthaRajuC/Bookmarc?mode=list)|
 
 [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Checkout+this+portable+web+browser+bookmark+manager&url=https://github.com/AnanthaRajuC/Bookmarc&hashtags=WebBrowser) [![Twitter Follow](https://img.shields.io/twitter/follow/anantharajuc?label=follow%20me&style=social)](https://twitter.com/anantharajuc)
 
-## Important Note: This project's new milestone is to release version 1, so stay tuned.
+## Important Note: This project's new milestone is to improve performance when processing bookmarks in the thousands, so stay tuned.
 
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
@@ -52,6 +52,7 @@
       <li><a href="#reporting-issues-suggest-improvements">Reporting Issues/Suggest Improvements</a></li>
 	    <li><a href="#contributing">Contributing</a></li>
 	    <li><a href="#license">License</a></li>
+		<li><a href="#fossa-third-party-code--license-compliance-and-vulnerabilities">FOSSA third-party code, license compliance and vulnerabilities</a></li>
 	    <li><a href="#contact">Contact</a></li>
       <li><a href="#the-end">The End</a></li>
    </ul>
@@ -257,14 +258,17 @@ Kindly refer to [CONTRIBUTING.md](/CONTRIBUTING.md) for important **Pull Request
 
 ## License
 
-<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://github.com/AnanthaRajuC/Bookmarc">Bookmarc</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://github.com/AnanthaRajuC">Anantha Raju C</a> is licensed under <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution-NonCommercial-ShareAlike 4.0 International<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a></p>
+<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://github.com/AnanthaRajuC/Bookmarc">Bookmarc</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://github.com/AnanthaRajuC">Anantha Raju C</a> is licensed under <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution-NonCommercial-ShareAlike 4.0 International
+
+<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a></p>
 
 See `LICENSE` for more information.
 
-<!-- CONTACT -->
+## FOSSA third-party code, license compliance and vulnerabilities
 
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FAnanthaRajuC%2FBookmarc.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FAnanthaRajuC%2FBookmarc?ref=badge_large)
 
+<!-- CONTACT -->
 ## Contact
 
 Anantha Raju C - [@anantharajuc](https://twitter.com/anantharajuc) - arcswdev@gmail.com

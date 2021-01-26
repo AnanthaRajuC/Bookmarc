@@ -1,0 +1,88 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+
+  <a class="navbar-brand" href="https://sourceforge.net/projects/bookmarc/" target="_blank">
+	  <img src="/images/bootstrap-solid.svg" width="30" height="30" alt="" loading="lazy">
+	  Bookmarc
+  </a>
+  
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+	
+	<li class="nav-item dropdown">
+		<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+		   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+		   th:text="${#strings.toUpperCase(#locale)}">
+		</a>
+		<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+			<a class="dropdown-item" th:href="@{/bookmark/home/(lang=en)}">English</a>
+			<a class="dropdown-item" th:href="@{/bookmark/home/(lang=es)}">Spanish</a>
+		</div>
+	</li>
+	
+      <li class="nav-item">
+        <a class="nav-link" href="/bookmark/home" th:text="#{navbar.home.text}"></i><span class="sr-only">(current)</span></a>
+      </li>
+	  <li class="nav-item">
+        <a class="nav-link" href="/bookmark/executionSummary">Summary</span></a>
+      </li>
+	   <li class="nav-item">
+        <a class="nav-link" href="/bookmark/dashboard">Dashboard</span></a>
+      </li>
+	  <li class="nav-item">
+        <a class="nav-link" href="/bookmark/about">About</span></a>
+      </li>
+	  <li class="nav-item">
+        <a class="nav-link" href="/bookmark/settings">Settings</span></a>
+      </li>
+    </ul>   
+   
+   <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
+   
+		<ul class="navbar-nav ml-auto nav-flex-icons">
+			  <li class="nav-item">
+				<a class="nav-link waves-effect waves-light" href="https://twitter.com/anantharajuc" target="_blank"><i class="fab fa-twitter"></i></a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link waves-effect waves-light"><i class="fab fa-google-plus-g"></i></a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link waves-effect waves-light" href="https://twitter.com/anantharajuc" target="_blank"><i class="fab fa-github"></i></a>
+			  </li>  
+		</ul>
+   
+   
+		<li class="nav-item dropdown">
+		  <a class="nav-item nav-link dropdown-toggle mr-md-2" href="#" id="bd-versions" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			v1.17.1
+		  </a>
+		  <div class="dropdown-menu dropdown-menu-md-right" aria-labelledby="bd-versions">
+			<a class="dropdown-item active" href="/">Latest (1.17.1)</a>
+			<a class="dropdown-item" href="http://bootstrap-table.com/versions/1.16.0/" target="_blank">v1.16.0</a>
+			<a class="dropdown-item" href="http://bootstrap-table.com/versions/1.15.5/" target="_blank">v1.15.5</a>
+		  </div>
+		</li>
+	    </ul>
+   
+   </br>
+   
+   <div class="custom-control custom-switch mr-1">
+            <input type="checkbox" class="custom-control-input" id="darkSwitch">
+            <label class="custom-control-label" for="darkSwitch">Dark Mode</label>
+   </div>
+   
+   </br>
+   
+    <form class="form-inline my-2 my-lg-0">
+      <button class="btn btn-outline-success mr-1" type="submit">REFRESH</button> 
+    </form>
+	
+	<a class="btn btn-outline-danger" type="submit" href="/bookmark/close" role="button">CLOSE APP</a>
+	
+  </div> 
+  </br>
+  </br>
+</nav>

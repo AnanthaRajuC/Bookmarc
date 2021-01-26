@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" 
+			    xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" 
+			    xmlns:with="http://www.thymeleaf.org/extras/with"
+			   layout:decorate="~{layout}"
+				 with:title="'About'">
+	  
+	<th:block layout:fragment="content">
+	
+    <p th:text="'Hello, Bud! Please fill out the form.'" />    
+    
+    <form action="#" th:action="@{/fooform}" th:object="${command}" method="post">
+    		<p>Simple Text Field: <input type="text" th:field="*{textField}" /></p>
+    		
+    		
+    		<p>Text Area Field: <textarea th:field="*{textareaField}" ></textarea></p>
+    		
+    		
+    		<p>Date Field: <input type="datetime-local" th:field="*{datetimeField}" /></p>
+    		
+    		<p>Color Field: <input type="color" th:field="*{colorField}" /></p>
+    		
+    		<div>
+    			<label th:for="singleCheckboxField" th:text="'Single Checkbox Field:'"></label>
+    			<input type="checkbox" th:field="*{singleCheckboxField}" />
+    		</div>
+    		
+    		<p>Multi Checkbox Fields:</p>
+    		<ul>
+    			<li th:each="checkboxValue: ${multiCheckboxAllValues}">
+    				<input type="checkbox" th:field="*{multiCheckboxSelectedValues}" th:value="${checkboxValue}" />
+    				<label th:for="${#ids.prev('multiCheckboxSelectedValues')}" th:text="${checkboxValue}"></label>
+    			</li>
+    		</ul>
+    		
+    		<p>Radio Button Fields:</p>
+    		<ul>
+    			<li th:each="radioValue: ${singleSelectAllValues}">
+    				<input type="radio" th:field="*{radioButtonSelectedValue}" th:value="${radioValue}" />
+    				<label th:for="${#ids.prev('radioButtonSelectedValue')}" th:text="${radioValue}"></label>
+    			</li>
+    		</ul>
+    		
+    		<p>Dropdown Field:</p>
+    		<select th:field="*{dropdownSelectedValue}">
+    			<option th:each="dropdownValue: ${singleSelectAllValues}"
+    					th:value="${dropdownValue}"
+    					th:text="${dropdownValue}" ></option>
+    		</select>    		
+    		
+	    <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /> </p>
+    </form>
+	
+	</hr>
+	
+	<a type="button" class="btn-floating btn-fb btn-sm">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a type="button" class="btn-floating btn-tw btn-sm">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a type="button" class="btn-floating btn-li btn-sm">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a type="button" class="btn-floating btn-git btn-sm">
+                <i class="fab fa-github"></i>
+            </a>
+		</hr>	
+			<form>
+  <div class="form-group">
+    <label for="exampleInputEmail1" class="bmd-label-floating">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1">
+    <span class="bmd-help">We'll never share your email with anyone else.</span>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1" class="bmd-label-floating">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1">
+  </div>
+  <div class="form-group">
+    <label for="exampleSelect1" class="bmd-label-floating">Example select</label>
+    <select class="form-control" id="exampleSelect1">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="exampleSelect2" class="bmd-label-floating">Example multiple select</label>
+    <select multiple class="form-control" id="exampleSelect2">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="exampleTextarea" class="bmd-label-floating">Example textarea</label>
+    <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputFile" class="bmd-label-floating">File input</label>
+    <input type="file" class="form-control-file" id="exampleInputFile">
+    <small class="text-muted">This is some placeholder block-level help text for the above input. It's a bit lighter and easily wraps to a new line.</small>
+  </div>
+  <div class="radio">
+    <label>
+      <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+      Option one is this and that&mdash;be sure to include why it's great
+    </label>
+  </div>
+  <div class="radio">
+    <label>
+      <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+      Option two can be something else and selecting it will deselect option one
+    </label>
+  </div>
+  <div class="radio disabled">
+    <label>
+      <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
+      Option three is disabled
+    </label>
+  </div>
+  <div class="checkbox">
+    <label>
+      <input type="checkbox"> Check me out
+    </label>
+  </div>
+  <button class="btn btn-default">Cancel</button>
+  <button type="submit" class="btn btn-primary btn-raised">Submit</button>
+</form>
+</th:block>
+	
+</html>

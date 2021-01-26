@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" 
+			    xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" 
+			    xmlns:with="http://www.thymeleaf.org/extras/with"
+			   layout:decorate="~{layout}"
+				 with:title="'Home'">
+	  
+	<th:block layout:fragment="content">
+	
+<!--	<div id="accordion">
+	
+      <div class="card card-plain">
+         <h5 class="card-header" role="tab" id="heading1">
+            <a data-toggle="collapse" aria-expanded="false" aria-controls="collapse1"  data-target="#collapse1"><i class="fa fa-chevron-down pull-right"></i> Preferences</a>
+         </h5>
+         <div id="collapse1" class="collapse show" role="tabpanel" aria-labelledby="heading1" data-parent="#accordion">
+            <div class="card-body">
+				<form>	
+					<div class="form-check form-check-inline">
+					  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" checked="checked">
+					  <label class="form-check-label" for="inlineCheckbox1">HTTP</label>
+					</div>
+					<div class="form-check form-check-inline">
+					  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2" checked="checked">
+					  <label class="form-check-label" for="inlineCheckbox2">HTTPS</label>
+					</div>
+					<div class="form-check form-check-inline">
+					  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option3" checked="checked">
+					  <label class="form-check-label" for="inlineCheckbox3">NSFW</label>
+					</div>
+				</form>
+            </div>
+         </div>
+      </div>
+	  
+      <div class="card card-plain">
+	  
+         <h5 class="card-header" role="tab" id="heading2">
+            <a class="collapsed" data-toggle="collapse" aria-expanded="false" aria-controls="collapse2" data-target="#collapse2"><i class="fa fa-chevron-down pull-right"></i> Frequency</a>
+         </h5>
+		 
+         <div id="collapse2" class="collapse" role="tabpanel" aria-labelledby="heading2" data-parent="#accordion">
+            <div class="card-body">
+               <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups" th:each="day :${day}">
+				  <div class="btn-group mr-2 btn-group-sm" role="group" aria-label="First group">
+					<button type="button" class="btn btn-light"><a href="/bookmark/home?period=0" style="color:inherit">Today </a><span class="badge badge-dark" th:text="${day}">day</span></button>
+					<button type="button" class="btn btn-light"><a href="/bookmark/home?period=1" style="color:inherit">Yesterday </a><span class="badge badge-dark" th:text="${day}">day</span></button>
+					<button type="button" class="btn btn-light"><a href="/bookmark/home?period=3" style="color:inherit">3 Days </a><span class="badge badge-dark" th:text="${day}">day</span></button>
+					<button type="button" class="btn btn-light"><a href="/bookmark/home?period=7" style="color:inherit">7 Days </a><span class="badge badge-dark" th:text="${day}">day</span></button>
+				  </div>
+				  <div class="btn-group mr-2 btn-group-sm" role="group" aria-label="Second group">
+					<button type="button" class="btn btn-light"><a href="/bookmark/home?period=30" style="color:inherit">1 Month </a><span class="badge badge-dark" th:text="${day}">day</span></button>
+					<button type="button" class="btn btn-light"><a href="/bookmark/home?period=90" style="color:inherit">3 Months </a><span class="badge badge-dark" th:text="${day}">day</span></button>
+					<button type="button" class="btn btn-light"><a href="/bookmark/home?period=180" style="color:inherit">6 Months </a><span class="badge badge-dark" th:text="${day}">day</span></button>
+				  </div>
+				  <div class="btn-group btn-group-sm" role="group" aria-label="Third group">
+					<button type="button" class="btn btn-light"><a href="/bookmark/home?period=365" style="color:inherit">1 Year </a><span class="badge badge-dark" th:text="${day}">day</span></button>
+					<button type="button" class="btn btn-light"><a href="/bookmark/home?period=730" style="color:inherit">2 Years </a><span class="badge badge-dark" th:text="${day}">day</span></button>
+					<button type="button" class="btn btn-light"><a href="/bookmark/home?period=731" style="color:inherit">Lifetime </a><span class="badge badge-dark" th:text="${day}">day</span></button>
+				  </div>
+				</div>
+            </div>            
+         </div>
+		 
+      </div>
+	  
+      </div>   -->
+
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home"
+      aria-selected="true">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile"
+      aria-selected="false">Profile</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact"
+      aria-selected="false">Contact</a>
+  </li>
+</ul>
+
+<div class="tab-content" id="myTabContent">
+
+  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+    <div class="card-body" role="tabpanel">
+			<form>	
+					<div class="form-check form-check-inline">
+					  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" checked="checked">
+					  <label class="form-check-label" for="inlineCheckbox1">HTTP</label>
+					</div>
+					<div class="form-check form-check-inline">
+					  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2" checked="checked">
+					  <label class="form-check-label" for="inlineCheckbox2">HTTPS</label>
+					</div>
+					<div class="form-check form-check-inline">
+					  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option3" checked="checked">
+					  <label class="form-check-label" for="inlineCheckbox3">NSFW</label>
+					</div>
+				</form>
+  </div>
+	</div>
+	
+  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab"> 
+  <div class="card-body" role="tabpanel">
+		<div >
+					<button type="button" class="btn btn-light rounded border border-dark"><a href="/bookmark/home?period=0" style="color:inherit">Today </a><span class="badge badge-info" th:text="${day}">day</span></button>
+					<button type="button" class="btn btn-light rounded border border-dark"><a href="/bookmark/home?period=1" style="color:inherit">Yesterday </a><span class="badge badge-primary" th:text="${day}">day</span></button>
+					<button type="button" class="btn btn-light rounded border border-dark"><a href="/bookmark/home?period=3" style="color:inherit">3 Days </a><span class="badge badge-primary" th:text="${day}">day</span></button>
+					<button type="button" class="btn btn-light rounded border border-dark"><a href="/bookmark/home?period=7" style="color:inherit">7 Days </a><span class="badge badge-primary" th:text="${day}">day</span></button>
+					
+					<button type="button" class="btn btn-light rounded border border-dark"><a href="/bookmark/home?period=30" style="color:inherit">1 Month </a><span class="badge badge-primary" th:text="${day}">day</span></button>
+					<button type="button" class="btn btn-light rounded border border-dark"><a href="/bookmark/home?period=90" style="color:inherit">3 Months </a><span class="badge badge-primary" th:text="${day}">day</span></button>
+					<button type="button" class="btn btn-light rounded border border-dark"><a href="/bookmark/home?period=180" style="color:inherit">6 Months </a><span class="badge badge-primary" th:text="${day}">day</span></button>				 
+				  
+					<button type="button" class="btn btn-light rounded border border-dark"><a href="/bookmark/home?period=365" style="color:inherit">1 Year </a><span class="badge badge-primary" th:text="${day}">day</span></button>
+					<button type="button" class="btn btn-light rounded border border-dark"><a href="/bookmark/home?period=730" style="color:inherit">2 Years </a><span class="badge badge-primary" th:text="${day}">day</span></button>
+					<button type="button" class="btn btn-light rounded border border-dark"><a href="/bookmark/home?period=731" style="color:inherit">Lifetime </a><span class="badge badge-primary" th:text="${day}">day</span></button>
+				
+				</div>
+    <!--<div class="file-upload-wrapper">
+		<input type="file" id="input-file-now" class="file-upload" />
+	</div>-->
+  </div>
+  
+	</div>
+	
+  <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+    <div class="card-body" role="tabpanel">
+	
+	<!-- <div class="container">
+    <div class="row">
+        <div class="col-lg-8 mt-5">
+
+            <div th:if="${message}">
+                <h2 th:text="${message}"/>
+            </div>
+
+            <form method="POST" enctype="multipart/form-data" action="/bookmark/upload">
+                <div class="form-group">
+                    <div class="custom-file">
+                        <input type="file" class="custom-file-input" id="customFile" name="file">
+                        <label class="custom-file-label" for="customFile">Choose file</label>
+                    </div>
+                </div>
+
+                <button class="btn btn-primary" type="submit">Submit form</button>
+            </form>
+
+        </div>
+    </div>
+	
+     </div>-->
+  </div>
+  
+    </div>
+	  
+	
+	</br>	
+	</br>
+
+	<table 
+	border="1" 
+	cellpadding="10" 
+	class="table table-hover table-striped table-sm" 
+	id="table" 
+	data-buttons="btn btn-sm"
+	data-buttons-class="link btn-sm"
+	data-advanced-search="true"
+    data-id-table="advancedTable"
+	data-resizable="true"
+	data-filter-control="true"
+	data-show-fullscreen="true"
+	data-show-search-clear-button="true"
+	data-show-button-text="true"
+	data-show-columns-search="true"	
+	data-show-toggle="true"
+	data-show-refresh="true"
+	data-show-pagination-switch="true"
+    data-toolbar="#toolbar"
+	data-toggle="table" 
+	data-flat="true" 
+	data-search="true"
+	data-search-align="left"
+	data-show-columns="true"
+	data-show-columns-toggle-all="true"
+	data-pagination="true"
+	data-pagination-v-align="both"
+	data-pagination-pre-text="Previous"
+	data-pagination-next-text="Next"
+	data-page-list="[5, 10, 25, All]">
+        <thead class="black white-text">
+            <tr>
+                <th data-resizable-column-id="addDate"   class="text-center" data-field="addDate"   data-sortable="true"></i> Add Date</th>
+				<th data-resizable-column-id="protocol"  class="text-center" data-field="protocol"  data-sortable="true" data-filter-control="select" data-title-tooltip="HTTP Protocol"  data-visible="false">Protocol</th>
+				<th data-resizable-column-id="authority" class="text-center" data-field="authority" data-sortable="true" data-filter-control="select">Authority</th>
+				<th data-resizable-column-id="text"      class="text-center" data-field="text"      data-sortable="true" data-filter-control="input">Text</th>
+				<th data-resizable-column-id="url"       class="text-center" data-field="url"       data-sortable="true" data-filter-control="input"></i> URL</th>				
+				<th data-resizable-column-id="path"      class="text-center" data-field="path"      data-sortable="true" data-filter-control="select" data-visible="false">path</th>
+				<th data-resizable-column-id="host"      class="text-center" data-field="host"      data-sortable="true" data-filter-control="select" data-visible="false">host</th>
+				<th data-resizable-column-id="port"      class="text-center" data-field="port"      data-sortable="true" data-filter-control="select" data-visible="false">port</th>
+				<th data-resizable-column-id="query"     class="text-center" data-field="query"     data-sortable="true" data-filter-control="input"  data-visible="false">query</th>
+				<th data-resizable-column-id="ref"       class="text-center" data-field="ref"       data-sortable="true" data-filter-control="input"  data-visible="false">ref</th>
+				<th data-resizable-column-id="epochTime" class="text-center" data-field="epochTime" data-sortable="true" data-filter-control="input"  data-visible="false">epochTime</th>
+				<th data-resizable-column-id="websiteCategory"       class="text-center" data-field="websiteCategory"       data-sortable="true" data-filter-control="select">Website Category</th>
+			</tr>
+        </thead>
+        	<tbody>
+				<tr th:each="data :${data}">
+					<td class="text-xs-center" th:text="${data.addDate}">addDate</td>
+					<td class="text-xs-left" th:text="${data.protocol}">protocol</td>
+					<td class="text-xs-left" th:text="${data.authority}">authority</td>
+					<td class="text-xs-left" th:text="${data.text}">text</td>
+					<td class="text-xs-left" th:text="${data.url}">URL</td>
+					<td class="text-xs-left" th:text="${data.path}">path</td>
+					<td class="text-xs-left" th:text="${data.host}">host</td>
+					<td class="text-xs-left" th:text="${data.port}">port</td>				
+					<td class="text-xs-left" th:text="${data.query}">query</td>
+					<td class="text-xs-left" th:text="${data.ref}">ref</td>
+					<td class="text-xs-left" th:text="${data.epochTime}">epochTime</td>
+				</tr>
+			</tbody>
+    </table>
+	
+	</hr>
+	
+	<footer class="bd-footer text-muted" align="center">
+	  <div>
+		<p style="font-size:14px;">Designed and built with all the love in the world by <a href="https://twitter.com/mdo" target="_blank">@mdo</a> and <a href="https://twitter.com/fat" target="_blank">@fat</a>. Maintained by the <a href="https://github.com/orgs/twbs/people">core team</a> with the help of <a href="https://github.com/twbs/bootstrap/graphs/contributors">our contributors</a>.</p>
+		<p style="font-size:14px;">Currently v4.0.0-alpha.6. Code licensed <a rel="license" href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a>, docs <a rel="license" href="https://creativecommons.org/licenses/by/3.0/" target="_blank">CC BY 3.0</a>.</p>
+	  </div>
+	</footer>
+
+	</th:block>	
+
+</html>
