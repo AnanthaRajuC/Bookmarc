@@ -1,4 +1,4 @@
-package io.github.anantharajuc.bookmarc.enums;
+package io.github.anantharajuc.bookmarc.model.enumeration;
 
 public enum WebsiteCategory 
 {

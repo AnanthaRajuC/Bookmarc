@@ -7,11 +7,13 @@ import javax.persistence.Table;
 
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
+import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
+import lombok.experimental.FieldDefaults;
 
 @Entity
 @Table(name = "bookmark_live_chrome")
@@ -21,25 +23,26 @@ import lombok.ToString;
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
+@FieldDefaults(level=AccessLevel.PRIVATE)
 public class BookmarkLiveChrome extends BaseEntity
 {
 	private static final long serialVersionUID = 1L;
 	
 	@Column(name="date_added", nullable = true)
-	private String date_added;
+	String date_added;
 	
 	@Column(name="guid", nullable = true)
-	private String guid;
+	String guid;
 	
 	@Column(name="bookmark_bar_id", nullable = true)
-	private String bookmarkBarId;
+	String bookmarkBarId;
 	
 	@Column(name="name", nullable = true)
-	private String name;
+	String name;
 	
 	@Column(name="type", nullable = true)
-	private String type;
+	String type;
 	
 	@Column(name="url", nullable = true)
-	private String url;
+	String url;
 }

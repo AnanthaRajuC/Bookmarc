@@ -239,18 +239,26 @@ public class AppServiceImpl implements AppService
 				
 				String url = (String) bookmarkJSON.get("url"); 
 						
-				//Date date = new Date(Long.parseLong((String) bookmarkJSON.get("date_added")));
+				Date date = new Date(Long.parseLong((String) bookmarkJSON.get("date_added")));
+				
+				log.info("date bm  - "+bookmarkJSON.get("date_added"));
+				log.info("date parsed - "+Long.parseLong((String) bookmarkJSON.get("date_added")));
 				
 				long unix_seconds = Long.parseLong((String) bookmarkJSON.get("date_added"));
-				Date date = new Date(unix_seconds * 1000L);
+				log.info("unix_seconds - "+unix_seconds);
+				Date dateD = new Date(unix_seconds * 1000L);
+				log.info("dateD - "+dateD);
 				SimpleDateFormat jdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 				jdf.setTimeZone(TimeZone.getDefault());
-				String java_date = jdf.format(date);
-				
+				log.info("jdf.format - "+jdf.format(dateD));
+
+				String java_date = jdf.format(dateD);
+				log.info("java_date - "+java_date);
 				Date date1 = jdf.parse(java_date);
+				log.info("date1 - "+date1);
 				
 				bookmark.setUrl(url);
-				//bookmark.setAddDate(date1); 
+				//bookmark.setAddDate(date); 
 				bookmark.setText((String) bookmarkJSON.get("name")); 				
 				bookmark.setSource("browser");
 				

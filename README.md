@@ -37,193 +37,17 @@
 
 Update `chrome.bookmarks.file.windows` in application properties file with your computer's username.
 
-<!-- TABLE OF CONTENTS -->
-## Table of Contents
+## Details
 
-<details open="open">
-   <ul>
-      <li>
-         <a href="#technology-stack---other-open-source-libraries">Technology stack &amp; other Open-source libraries</a>
-         <ul>
-            <li><a href="#data">Data</a></li>
-            <li><a href="#client---frontend-ui">Client - Frontend/UI</a></li>
-            <li><a href="#server---backend">Server - Backend</a></li>
-            <li><a href="#libraries-and-plugins">Libraries and Plugins</a></li>
-            <li><a href="#others">Others</a></li>
-            <li><a href="#external-tools---services">External Tools &amp; Services</a></li>
-         </ul>
-      </li>
-      <li><a href="#features-and-to-do">Features and To-Do</a></li>
-      <li><a href="#documentation">Documentation</a></li>
-      <li><a href="#internationalization--i18n-">Internationalization (i18n)</a></li>
-      <li>
-         <a href="#files-and-directories-structure">Files and Directories Structure</a>
-      </li>
-      <li><a href="#reporting-issues-suggest-improvements">Reporting Issues/Suggest Improvements</a></li>
-	    <li><a href="#contributing">Contributing</a></li>
-	    <li><a href="#license">License</a></li>
-		<li><a href="#fossa-third-party-code--license-compliance-and-vulnerabilities">FOSSA third-party code, license compliance and vulnerabilities</a></li>
-	    <li><a href="#contact">Contact</a></li>
-      <li><a href="#the-end">The End</a></li>
-   </ul>
-</details>
-
-## Technology stack & other Open-source libraries
-
-### Data
-
-<details open="open">
-   <ul>
-      <li><a href="https://flywaydb.org/">Flyway</a> - Version control for database</li>
-      <li><a href="https://www.h2database.com/html/main.html">H2 Database Engine</a> - Java SQL database. Embedded and server modes; in-memory databases</li>
-   </ul>
-</details>
-
-### Client - Frontend/UI
-
-<details open="open">
-   <ul>
-      <li><a href="https://getbootstrap.com/">Bootstrap</a> - Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development.</li>
-      <li><a href="https://bootstrap-table.com/">Bootstrap Table</a> - An extended table to the integration with some of the most widely used CSS frameworks.</li>
-      <li><a href="https://www.thymeleaf.org/">Thymeleaf</a> - Modern server-side Java template engine for both web and standalone environments.</li>
-   </ul>
-</details>
-
-### Server - Backend
-
-<details open="open">
-   <ul>
-      <li><a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html">JDK</a> - Java™ Platform, Standard Edition Development Kit</li>
-      <li><a href="https://spring.io/projects/spring-boot">Spring Boot</a> - Framework to ease the bootstrapping and development of new Spring Applications</li>
-      <li><a href="https://maven.apache.org/">Maven</a> - Dependency Management</li>
-   </ul>
-</details>
-
-###  Libraries and Plugins
-
-<details open="open">
-   <ul>
-      <li><a href="https://github.com/Antibrumm/thymeleaf-extras-with-dialect">Thymeleaf With Dialect</a> - A dialect for Thymeleaf that allows you to use attributes with a &quot;with&quot; prefix to avoid having long &quot;th:with&quot;-expressions.</li>
-      <li><a href="https://github.com/ultraq/thymeleaf-layout-dialect">Thymeleaf Layout Dialect</a> - A dialect for Thymeleaf that lets you build layouts and reusable templates in order to improve code reuse.</li>
-      <li><a href="https://projectlombok.org/">Lombok</a> - Never write another getter or equals method again, with one annotation your class has a fully featured builder, Automate your logging variables, and much more.</li>
-      <li><a href="https://swagger.io/">Swagger</a> - Open-Source software framework backed by a large ecosystem of tools that helps developers design, build, document, and consume RESTful Web services.</li>
-   </ul>
-</details>
-
-### Others 
-
-<details open="open">
-   <ul>
-      <li><a href="https://git-scm.com/">git</a> - Free and Open-Source distributed version control system</li>
-  </ul>
-</details>
-
-### External Tools & Services
-
-<details open="open">
-   <ul>
-      <li><a href="https://www.toptal.com/developers/gitignore/api/java,eclipse,intellij">gitignore.io</a> - Create useful .gitignore files for your project.</li>
-   </ul>
-</details>
-
-## Features and To-Do
-
-<details open="open">
-   <ul>
-      <li>[ ] Unit Tests, Integration Tests</li>
-      <li>[ ] Software documentation - <a href="https://swagger.io/">Swagger</a>, <a href="https://en.wikipedia.org/wiki/Javadoc">Javadoc</a>, <a href="https://www.postman.com/collection/">Postman Collection</a></li>
-      <li>[ ] <a href="https://www.docker.com/">Docker</a></li>
-      <li>[ ] Web Browser Agnostic</li>
-      <li>[ ] Desktop Executable</li>
-      <li>[ ] OS Agnostic</li>
-      <li>[ ] Export Data</li>
-      <li>[ ] Import Data</li>
-      <li>[ ] Password Protection</li>
-      <li>[ ] Portable</li>
-      <li>[ ] Search by Year, Month, protocol, domain, category</li>
-      <li>[ ] History</li>
-      <li>[ ] Family Fiendly Content</li>
-      <li>[ ] Adult Content</li>
-      <li>[ ] Categories - video, code, etc.,</li>
-      <li>[ ] Flags - UTM https://en.wikipedia.org/wiki/Query_string</li>
-      <li>[ ] Distribution - Graph</li>
-      <li>[ ] Remove Duplicates - *	Avoid reading same file again</li>
-      <li>[ ] Insights - Busiest Day</li>
-      <li>[ ] Customization</li>
-      <li>[ ] Rules based bookmark cleaning, alerts (Bookmark age), This week, This month etc.,</li>
-      <li>[ ] Usage Data Collection Metrics - Anonymous</li>
-      <li>[ ] phishtank.com</li>
-      <li>[ ] Save Page value on Page Refresh</li>
-      <li>[ ] Order By - Filter</li>
-   </ul>
-</details>
+- [Technology stack & other Open-source libraries](documents/TECHNOLOGY_STACK.MD)  
+- [Technical Functionalities and To-Do](documents/TECHNICAL_FUNCTIONALITIES.MD)  
+- [Installation](documents/INSTALLATION.MD)  
+- [Changelog](documents/CHANGELOG.md) 
 
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-      
-### Prerequisites
 
-*	OS Username
-
-## Installing
-
-*	Default active profile is **`test`**. When the application is running, **Flyway** will create the necessary tables and system data along with sample data. In all profile's, the application uses **H2** database (data in memory).
-      
-#### Running the application with IDE
-
-There are several ways to run a Spring Boot application on your local machine. One way is to execute the `main` method in the `com.arc.sbtest.SBtemplateApplication` class from your IDE.
-
-* 	Download the zip or clone the Git repository.
-* 	Unzip the zip file (if you downloaded one)
-* 	Open Command Prompt and Change directory (cd) to folder containing pom.xml
-* 	Open Eclipse
-	* File -> Import -> Existing Maven Project -> Navigate to the folder where you unzipped the zip
-	* Select the project
-* 	Choose the Spring Boot Application file (search for @SpringBootApplication)
-* 	Right Click on the file and Run as Java Application      
-      
-#### Running the application with Maven
-
-Alternatively you can use the [Spring Boot Maven plugin](https://docs.spring.io/spring-boot/docs/current/reference/html/build-tool-plugins-maven-plugin.html) like so:
-
-```shell
-$ git clone https://github.com/AnanthaRajuC/Bookmarc.git
-$ cd Bookmarc
-$ mvn spring-boot:run
-```
-
-#### Running the application with Executable JAR
-
-The code can also be built into a jar and then executed/run. Once the jar is built, run the jar by double clicking on it or by using the command 
-
-```shell
-$ git clone https://github.com/AnanthaRajuC/Bookmarc.git
-$ cd Bookmarc
-$ mvn package -DskipTests
-$ java -jar target/Bookmarc-0.0.1-SNAPSHOT.jar --spring.profiles.active=test
-```
-
-To shutdown the jar, follow the below mentioned steps on a Windows machine.
-
-*	In command prompt execute the **jcmd** command to print a list of all running Java processes
-*	**Taskkill /PID PROCESS_ID_OF_RUNNING_APP /F** execute this command by replacing the **PROCESS_ID_OF_RUNNING_APP** with the actual process id of the running jar found out from executing the previous command
-
-##### Accessing Data in H2 Database
-
-###### H2 Console
-
-URL to access H2 console: **http://localhost:${server.port}/h2-console/login.jsp**
-
-Fill the login form as follows and click on Connect:
-
-* 	Saved Settings: **Generic H2 (Embedded)**
-* 	Setting Name: **Generic H2 (Embedded)**
-* 	Driver class: **org.h2.Driver**
-* 	JDBC URL: **jdbc:h2:mem:bookmarc;MODE=MySQL**
-* 	User Name: **sa**
-* 	Password:
-      
 ## Documentation
 
 * 	[Swagger](http://localhost:8080/swagger-ui.html) - `http://localhost:8080/swagger-ui.html`- Documentation & Testing
@@ -260,11 +84,41 @@ Contributions are what make the open source community such an amazing place to b
 
 Kindly refer to [CONTRIBUTING.md](/CONTRIBUTING.md) for important **Pull Request Process** details
 
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+1. In the top-right corner of this page, click **Fork**.
+
+2. Clone a copy of your fork on your local, replacing *YOUR-USERNAME* with your Github username.
+
+   `git clone https://github.com/YOUR-USERNAME/Bookmarc.git`
+
+3. **Create a branch**: 
+
+   `git checkout -b <my-new-feature-or-fix>`
+
+4. **Make necessary changes and commit those changes**:
+
+   `git add .`
+
+   `git commit -m "new feature or fix"`
+
+5. **Push changes**, replacing `<add-your-branch-name>` with the name of the branch you created earlier at step #3. :
+
+   `git push origin <add-your-branch-name>`
+
+6. Submit your changes for review. Go to your repository on GitHub, you'll see a **Compare & pull request** button. Click on that button. Now submit the pull request.
+
+That's it! Soon I'll be merging your changes into the master branch of this project. You will get a notification email once the changes have been merged. Thank you for your contribution.
+
+Kindly follow [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) to create an explicit commit history. Kindly prefix the commit message with one of the following type's.
+
+**build**   : Changes that affect the build system or external dependencies (example scopes: gulp, broccoli, npm)  
+**ci**      : Changes to our CI configuration files and scripts (example scopes: Travis, Circle, BrowserStack, SauceLabs)  
+**docs**    : Documentation only changes  
+**feat**    : A new feature  
+**fix**     : A bug fix  
+**perf**    : A code change that improves performance  
+**refactor**: A code change that neither fixes a bug nor adds a feature  
+**style**   : Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)  
+**test**    : Adding missing tests or correcting existing tests  
 
 ## License
 
@@ -278,13 +132,6 @@ See `LICENSE` for more information.
 
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FAnanthaRajuC%2FBookmarc.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FAnanthaRajuC%2FBookmarc?ref=badge_large)
 
-<!-- CONTACT -->
-## Contact
-
-Anantha Raju C - [@anantharajuc](https://twitter.com/anantharajuc) - arcswdev@gmail.com
-
-Project Link: [https://github.com/AnanthaRajuC/Bookmarc](https://github.com/AnanthaRajuC/Bookmarc)
-
 ## The End
 
 In the end, I hope you enjoyed the application and find it useful, as I did when I was developing it to create a convenient way to manage web browsers' bookmark's.
@@ -297,3 +144,10 @@ If you would like to enhance, please:
 *	Finally, give it a 🌟.
 
 * Happy Coding ...* 🙂
+
+<!-- CONTACT -->
+## Contact
+
+Anantha Raju C - [@anantharajuc](https://twitter.com/anantharajuc) - arcswdev@gmail.com
+
+Project Link: [https://github.com/AnanthaRajuC/Bookmarc](https://github.com/AnanthaRajuC/Bookmarc)

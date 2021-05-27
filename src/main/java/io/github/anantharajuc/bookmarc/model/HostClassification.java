@@ -9,12 +9,14 @@ import javax.persistence.Table;
 
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
-import io.github.anantharajuc.bookmarc.enums.WebsiteCategory;
+import io.github.anantharajuc.bookmarc.model.enumeration.WebsiteCategory;
+import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
+import lombok.experimental.FieldDefaults;
 
 @Entity
 @Table(name = "host_classification")
@@ -24,14 +26,15 @@ import lombok.ToString;
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
+@FieldDefaults(level=AccessLevel.PRIVATE)
 public class HostClassification extends BaseEntity
 {
 	private static final long serialVersionUID = 1L;
 	
 	@Column(name="host", nullable = true)
-	private String host;
+	String host;
 	
 	@Enumerated(EnumType.STRING)
 	@Column(name="website_category", nullable = true)
-	private WebsiteCategory websiteCategory;
+	WebsiteCategory websiteCategory;
 }

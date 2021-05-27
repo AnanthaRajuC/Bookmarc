@@ -20,6 +20,12 @@ import io.github.anantharajuc.bookmarc.repository.ExecutionSummaryRepository;
 import io.github.anantharajuc.bookmarc.service.FileService;
 import lombok.extern.log4j.Log4j2;
 
+/**
+ * Bookmark Controller
+ *
+ * @author <a href="mailto:arcswdev@gmail.com">Anantha Raju C</a>
+ *
+ */
 @Log4j2
 @Controller
 @RequestMapping({"/", "/bookmark"})
@@ -40,9 +46,11 @@ public class BookmarkController
 	@GetMapping("/home")
 	public String home(Model model, @RequestParam(defaultValue="731") int period)
 	{ 
-		model.addAttribute("data", bookmarkRepository.getAllBetweenDates(period)); 
-
-		int day = bookmarkRepository.getAllBetweenDates(period).size();
+		//model.addAttribute("data", bookmarkRepository.getAllBetweenDates(period)); 
+		model.addAttribute("data", bookmarkRepository.findAll());
+		
+		//int day = bookmarkRepository.getAllBetweenDates(period).size();
+		int day = 1;
 		
 		model.addAttribute("day", day);
 		
@@ -125,10 +133,12 @@ public class BookmarkController
 		try 
 		{
 			log.info("fin");
+			
 			InputStream fin=file.getInputStream();    
 			int i=fin.read();  
+			
 			log.info(fin.toString());
-            System.out.print((char)i);    
+			log.info((char)i);    
   
             fin.close();
 		} 

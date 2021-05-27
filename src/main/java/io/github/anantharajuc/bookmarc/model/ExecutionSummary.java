@@ -7,11 +7,13 @@ import javax.persistence.Table;
 
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
+import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
+import lombok.experimental.FieldDefaults;
 
 @Entity
 @Table(name = "execution_summary")
@@ -21,19 +23,20 @@ import lombok.ToString;
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
+@FieldDefaults(level=AccessLevel.PRIVATE)
 public class ExecutionSummary extends BaseEntity
 {
 	private static final long serialVersionUID = 1L;
 	
 	@Column(name="file_name", nullable = true)
-	private String fileName;
+	String fileName;
 	
 	@Column(name="file_size", nullable = true)
-	private String fileSize;
+	String fileSize;
 	
 	@Column(name="url_count", nullable = true)
-	private int urlCount;
+	int urlCount;
 	
 	@Column(name="execution_id", nullable = true)
-	private String executionId;
+	String executionId;
 }

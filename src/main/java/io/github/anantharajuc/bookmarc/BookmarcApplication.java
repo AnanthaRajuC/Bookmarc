@@ -17,6 +17,12 @@ import io.github.anantharajuc.bookmarc.service.impl.FileServiceImpl;
 import io.github.anantharajuc.bookmarc.service.impl.OtherServicesImpl;
 import lombok.extern.log4j.Log4j2;
 
+/**
+ * Bookmarc.
+ *
+ * @author <a href="mailto:arcswdev@gmail.com">Anantha Raju C</a>
+ *
+ */
 @Log4j2
 @EnableJpaAuditing
 @SpringBootApplication
@@ -66,17 +72,6 @@ public class BookmarcApplication implements CommandLineRunner
 		
 		String url = "http://localhost:"+port+"/bookmark/home";
 
-		if (Desktop.isDesktopSupported() && Desktop.getDesktop().isSupported(Desktop.Action.BROWSE)) 
-		{
-			log.info("opening application url : "+"http://localhost:"+port+"/bookmark/home");
-			
-		    //Desktop.getDesktop().browse(new URI(url));
-		}
-		else
-		{
-			log.info("unable to open url");
-		}
-		
 		log.info("-----> Starting Processing of Bookmarks' file's.");
 		fileServiceImpl.importBrowserBookmark();
 		log.info("-----> Finished Processing of Bookmarks' file's.");
@@ -84,5 +79,16 @@ public class BookmarcApplication implements CommandLineRunner
 		log.info("-----> Starting Processing of Live Bookmark's in Chrome Browser");
 		appServiceImpl.BookmarkLiveChromeParser();
 		log.info("-----> Finished Processing of Live Bookmark's in Chrome Browser");
+		
+		if (Desktop.isDesktopSupported() && Desktop.getDesktop().isSupported(Desktop.Action.BROWSE)) 
+		{
+			log.info("opening application url : "+"http://localhost:"+port+"/bookmark/home");
+			
+		    Desktop.getDesktop().browse(new URI(url));
+		}
+		else
+		{
+			log.info("unable to open url");
+		}
 	}
 }

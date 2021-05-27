@@ -16,28 +16,31 @@ import org.springframework.data.annotation.LastModifiedDate;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
+import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.experimental.FieldDefaults;
 
 @MappedSuperclass
 @JsonIgnoreProperties(value = {"createdOn", "updatedOn"}, allowGetters = false)
 @Getter
 @Setter
+@FieldDefaults(level=AccessLevel.PRIVATE)
 public class BaseEntity implements Serializable
 {
 	private static final long serialVersionUID = 1L;
 
 	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    Long id;
 	
 	@Column(name="created_on", nullable = true, updatable = false)
     @Temporal(TemporalType.TIMESTAMP)
     @CreatedDate
-    private Date createdOn;
+    Date createdOn;
 		
 	@Column(name="updated_on",nullable = true, updatable = true)
     @Temporal(TemporalType.TIMESTAMP)
     @LastModifiedDate
-    private Date updatedOn;
+    Date updatedOn;
 }

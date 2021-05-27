@@ -10,12 +10,14 @@ import javax.persistence.Enumerated;
 import javax.persistence.Table;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
-import io.github.anantharajuc.bookmarc.enums.WebsiteCategory;
+import io.github.anantharajuc.bookmarc.model.enumeration.WebsiteCategory;
+import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
+import lombok.experimental.FieldDefaults;
 
 @Entity
 @Table(name = "bookmark")
@@ -25,50 +27,51 @@ import lombok.ToString;
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
+@FieldDefaults(level=AccessLevel.PRIVATE)
 public class Bookmark extends BaseEntity
 {
 	private static final long serialVersionUID = 1L;
 	
 	@Column(name="text", nullable = true, length = 600)
-	private String text;
+	String text;
 	
 	@Column(name="add_date",nullable = true, updatable = true)
-    private Date addDate;
+    Date addDate;
 	
 	@Column(name="url", nullable = true, length = 600)
-	private String url;
+	String url;
 	
 	@Column(name="protocol", nullable = true)
-	private String protocol;
+	String protocol;
 	
 	@Column(name="authority", nullable = true)
-	private String authority;
+	String authority;
 	
 	@Column(name="host", nullable = true)
-	private String host;
+	String host;
 	
 	@Column(name="port", nullable = true)
-	private int port;
+	int port;
 	
 	@Column(name="path", nullable = true, length = 600)
-	private String path;
+	String path;
 	
 	@Column(name="query", nullable = true, length = 600)
-	private String query;
+	String query;
 
 	@Column(name="filename", nullable = true, length = 600)
-	private String filename;
+	String filename;
 	
 	@Column(name="ref", nullable = true, length = 600)
-	private String ref;
+	String ref;
 	
 	@Column(name="epoch_time", nullable = true)
-	private Long epochTime;
+	Long epochTime;
 	
 	@Column(name="source", nullable = true)
-	private String source = "bookmark file";
+	String source = "bookmark file";
 	
 	@Enumerated(EnumType.STRING)
 	@Column(name="website_category", nullable = true)
-	private WebsiteCategory websiteCategory;
+	WebsiteCategory websiteCategory;
 }
