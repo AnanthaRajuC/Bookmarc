@@ -46,7 +46,7 @@ public class AppServiceImpl implements AppService
 	
 	private int fileCount = 0;
 	
-	int urlcounter=0;
+	int urlcounter = 0;
 	
 	@Override
 	public HashMap<String,String> urlParser(String urlToBeProcessed) 
@@ -98,6 +98,7 @@ public class AppServiceImpl implements AppService
 		{
 			e.printStackTrace();
 		}
+		
 		return null;
 	}
 
@@ -240,7 +241,7 @@ public class AppServiceImpl implements AppService
 				String url = (String) bookmarkJSON.get("url"); 
 						
 				Date date = new Date(Long.parseLong((String) bookmarkJSON.get("date_added")));
-				
+				log.info("date  - "+date);
 				log.info("date bm  - "+bookmarkJSON.get("date_added"));
 				log.info("date parsed - "+Long.parseLong((String) bookmarkJSON.get("date_added")));
 				
@@ -258,7 +259,7 @@ public class AppServiceImpl implements AppService
 				log.info("date1 - "+date1);
 				
 				bookmark.setUrl(url);
-				//bookmark.setAddDate(date); 
+				bookmark.setAddDate(date); 
 				bookmark.setText((String) bookmarkJSON.get("name")); 				
 				bookmark.setSource("browser");
 				

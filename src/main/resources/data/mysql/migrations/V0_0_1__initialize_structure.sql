@@ -25,7 +25,7 @@ CREATE TABLE `bookmark` (
   `id` bigint(20) NOT NULL PRIMARY KEY AUTO_INCREMENT,
   `created_on` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `updated_on` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  `add_date` datetime DEFAULT NULL,
+  `add_date` timestamp DEFAULT NULL,
   `authority` varchar(255) DEFAULT NULL,
   `epoch_time` bigint(20) DEFAULT NULL,
   `filename` varchar(2000) DEFAULT NULL,

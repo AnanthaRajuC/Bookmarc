@@ -35,38 +35,16 @@
 
 ## Important Note: This project's new milestone is to improve performance when processing bookmarks in the thousands, so stay tuned.
 
-Update `chrome.bookmarks.file.windows` in application properties file with your computer's username.
+Update `chrome.bookmarks.file.windows` in **application.properties** file with your computer's username.
 
 ## Details
 
 - [Technology stack & other Open-source libraries](documents/TECHNOLOGY_STACK.MD)  
-- [Technical Functionalities and To-Do](documents/TECHNICAL_FUNCTIONALITIES.MD)  
+- [Technical Functionalities and To-Do](documents/TECHNICAL_FUNCTIONALITIES.md)  
 - [Installation](documents/INSTALLATION.MD)  
 - [Changelog](documents/CHANGELOG.md) 
-
-## Getting Started
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-
-## Documentation
-
-* 	[Swagger](http://localhost:8080/swagger-ui.html) - `http://localhost:8080/swagger-ui.html`- Documentation & Testing
-*	Find Java Doc in **javadoc** folder
-* 	Java Doc is generated in `Bookmarc\target\site\apidocs` folder using the Maven command 
-
-```text
-`mvn javadoc:javadoc`                   //Generate JavaDoc
-```
- 
-## Internationalization (i18n)
-
-This app can be adapted to various languages and regions without engineering changes. Textual elements, such as status messages and the GUI component labels, are not hardcoded in the program. Instead they are stored outside the source code and retrieved dynamically.
-
-Refer `io.github.anantharajuc.bookmarc.backend.config.I18Nconfiguration`. The text elements are stored in `\src\main\resources\i18n` folder.
-
-## Files and Directories Structure
-
-* 	Refer to [ARCHITECTURE.md](documents/ARCHITECTURE.md) for details.
+- [Internationalization (i18n)](documents/INTERNATIONALIZATION.MD) 
+- [Documentation](documents/DOCUMENTATION.MD) 
 
 ## Reporting Issues/Suggest Improvements
 
