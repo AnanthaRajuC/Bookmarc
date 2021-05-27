@@ -65,11 +65,12 @@ public class BookmarcApplication implements CommandLineRunner
 		log.info("application port : "+port);
 		
 		String url = "http://localhost:"+port+"/bookmark/home";
-		
+
 		if (Desktop.isDesktopSupported() && Desktop.getDesktop().isSupported(Desktop.Action.BROWSE)) 
 		{
-			log.info("opening url");
-		    Desktop.getDesktop().browse(new URI(url));
+			log.info("opening application url : "+"http://localhost:"+port+"/bookmark/home");
+			
+		    //Desktop.getDesktop().browse(new URI(url));
 		}
 		else
 		{

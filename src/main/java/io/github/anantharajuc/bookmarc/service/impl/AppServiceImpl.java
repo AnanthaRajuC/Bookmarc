@@ -250,7 +250,7 @@ public class AppServiceImpl implements AppService
 				Date date1 = jdf.parse(java_date);
 				
 				bookmark.setUrl(url);
-				bookmark.setAddDate(date1); 
+				//bookmark.setAddDate(date1); 
 				bookmark.setText((String) bookmarkJSON.get("name")); 				
 				bookmark.setSource("browser");
 				
@@ -281,7 +281,7 @@ public class AppServiceImpl implements AppService
 		{
 			e.printStackTrace();
 		}	
-	}
+	} 
 
 	@Override
 	public void classifyHost() 
