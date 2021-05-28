@@ -26,7 +26,7 @@
 
 #### Running the application with IDE
 
-There are several ways to run a Spring Boot application on your local machine. One way is to execute the `main` method in the `com.arc.sbtest.SBtemplateApplication` class from your IDE.
+There are several ways to run a Spring Boot application on your local machine. One way is to execute the `main` method in the `io.github.anantharajuc.bookmarc.BookmarcApplication` class from your IDE.
 
 * 	Download the zip or clone the Git repository.
 * 	Unzip the zip file (if you downloaded one)

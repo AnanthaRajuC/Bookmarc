@@ -2,10 +2,13 @@ package io.github.anantharajuc.bookmarc.repository;
 
 import java.util.List;
 
+import javax.validation.constraints.NotBlank;
+
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
 
 import io.github.anantharajuc.bookmarc.model.Bookmark;
 
@@ -20,4 +23,7 @@ public interface BookmarkRepository extends JpaRepository<Bookmark, Integer>
 	
 	@Query(value = "UPDATE BOOKMARK A SET WEBSITE_CATEGORY = (SELECT WEBSITE_CATEGORY FROM HOST_CLASSIFICATION B WHERE B.HOST = A.HOST) WHERE EXISTS (SELECT WEBSITE_CATEGORY FROM HOST_CLASSIFICATION B WHERE B.HOST = A.HOST)", nativeQuery = true)
 	public List<Bookmark> updateWebsiteCategory();
+	
+	@Transactional(readOnly = true)
+	Boolean existsByUrl(@NotBlank String url);
 }

@@ -259,7 +259,7 @@ public class AppServiceImpl implements AppService
 				log.info("date1 - "+date1);
 				
 				bookmark.setUrl(url);
-				bookmark.setAddDate(date); 
+				//bookmark.setAddDate(date); 
 				bookmark.setText((String) bookmarkJSON.get("name")); 				
 				bookmark.setSource("browser");
 				
@@ -283,7 +283,15 @@ public class AppServiceImpl implements AppService
 					bookmark.setEpochTime(System.currentTimeMillis()); 
 				}
 				
-				bookmarkRepository.save(bookmark); 
+				if(!bookmarkRepository.existsByUrl(url))
+				{
+					bookmarkRepository.save(bookmark); 
+				}
+				else
+				{
+					log.info("URL: "+url+" is already processed!");
+				}
+
 			}
 		} 
 		catch (IOException | ParseException | java.text.ParseException e) 
