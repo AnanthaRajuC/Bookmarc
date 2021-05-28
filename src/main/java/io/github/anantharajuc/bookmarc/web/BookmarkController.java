@@ -1,4 +1,4 @@
-package io.github.anantharajuc.bookmarc.controller;
+package io.github.anantharajuc.bookmarc.web;
 
 import java.io.IOException;
 import java.io.InputStream;
