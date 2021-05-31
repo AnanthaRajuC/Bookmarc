@@ -64,13 +64,7 @@ public class BookmarcApplication implements CommandLineRunner
 		log.info(otherServicesImpl.getApplicationName());
 		log.info(otherServicesImpl.getApplicationVersion());
 		
-		OsCheck.OSType ostype=OsCheck.getOperatingSystemType();
-		
-		String port = environment.getProperty("local.server.port");
-		
-		log.info("application port : "+port);
-		
-		String url = "http://localhost:"+port+"/bookmark/home";
+		OsCheck.getOperatingSystemType();
 
 		log.info("-----> Starting Processing of Bookmarks' file's.");
 		fileServiceImpl.importBrowserBookmark();
@@ -79,9 +73,15 @@ public class BookmarcApplication implements CommandLineRunner
 		log.info("-----> Starting Processing of Live Bookmark's in Chrome Browser");
 		appServiceImpl.BookmarkLiveChromeParser();
 		log.info("-----> Finished Processing of Live Bookmark's in Chrome Browser");
-		
+
 		if (Desktop.isDesktopSupported() && Desktop.getDesktop().isSupported(Desktop.Action.BROWSE)) 
 		{
+			String port = environment.getProperty("local.server.port");
+			
+			log.info("application port : "+port);
+			
+			String url = "http://localhost:"+port+"/bookmark/home";
+			
 			log.info("opening application url : "+"http://localhost:"+port+"/bookmark/home");
 			
 		    Desktop.getDesktop().browse(new URI(url));

@@ -133,19 +133,12 @@ public class AppServiceImpl implements AppService
 		}
 		
 		log.info("moving file : "+System.getProperty("user.dir")+"\\bm\\"+htmlFilesName);
+		
 		File htmlfile = new File(System.getProperty("user.dir")+"\\bm\\"+htmlFilesName);
 		if(htmlfile.renameTo(new File(System.getProperty("user.dir")+"\\bm\\processed\\"+htmlFilesName)))
 		{
 			log.info("file moved successfully");
 		}
-	}
-
-	@Override
-	public void getBookmarks() 
-	{
-		log.info("Calendar.DAY_OF_MONTH  : "+Calendar.DAY_OF_MONTH);
-		log.info("LocalDateTime.now()  : "+LocalDateTime.now());
-		log.info("LocalDate.now()  : "+LocalDate.now());
 	}
 
 	@Override
@@ -253,5 +246,13 @@ public class AppServiceImpl implements AppService
 		{
 			bookmarkRepository.updateWebsiteCategory();
 		}
+	}
+	
+	@Override
+	public void getBookmarks() 
+	{
+		log.info("Calendar.DAY_OF_MONTH  : "+Calendar.DAY_OF_MONTH);
+		log.info("LocalDateTime.now()  : "+LocalDateTime.now());
+		log.info("LocalDate.now()  : "+LocalDate.now());
 	}
 }

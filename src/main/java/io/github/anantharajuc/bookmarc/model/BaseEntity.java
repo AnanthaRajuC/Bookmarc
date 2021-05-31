@@ -21,6 +21,12 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.experimental.FieldDefaults;
 
+/**
+ * Simple JavaBean domain object with id, createdOn, updatedOn  properties. Used as a base class for objects
+ * needing this property.
+ *
+ * @author Anantha Raju C
+ */
 @MappedSuperclass
 @JsonIgnoreProperties(value = {"createdOn", "updatedOn"}, allowGetters = false)
 @Getter

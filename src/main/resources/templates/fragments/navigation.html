@@ -18,14 +18,16 @@
 		   th:text="${#strings.toUpperCase(#locale)}">
 		</a>
 		<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-			<a class="dropdown-item" th:href="@{/bookmark/home/(lang=en)}">English</a>
-			<a class="dropdown-item" th:href="@{/bookmark/home/(lang=es)}">Spanish</a>
+			<a class="dropdown-item notify-item" th:href="@{/sbat/index/(lang=en)}"><img src="/images/us.jpg" alt="user-image" class="mr-1" height="12">English</a>
+               <a class="dropdown-item notify-item" th:href="@{/sbat/index/(lang=es)}"><img src="/images/spain.jpg" alt="user-image" class="mr-1" height="12">Spanish</a>
 		</div>
 	</li>
 	
       <li class="nav-item">
         <a class="nav-link" href="/bookmark/home" th:text="#{navbar.home.text}"></i><span class="sr-only">(current)</span></a>
       </li>
+	  
+	  <!-- Uncomment when ready
 	  <li class="nav-item">
         <a class="nav-link" href="/bookmark/executionSummary">Summary</span></a>
       </li>
@@ -37,7 +39,9 @@
       </li>
 	  <li class="nav-item">
         <a class="nav-link" href="/bookmark/settings">Settings</span></a>
-      </li>
+      </li>-->
+	  
+	  
     </ul>   
    
    <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
@@ -45,9 +49,6 @@
 		<ul class="navbar-nav ml-auto nav-flex-icons">
 			  <li class="nav-item">
 				<a class="nav-link waves-effect waves-light" href="https://twitter.com/anantharajuc" target="_blank"><i class="fab fa-twitter"></i></a>
-			  </li>
-			  <li class="nav-item">
-				<a class="nav-link waves-effect waves-light"><i class="fab fa-google-plus-g"></i></a>
 			  </li>
 			  <li class="nav-item">
 				<a class="nav-link waves-effect waves-light" href="https://twitter.com/anantharajuc" target="_blank"><i class="fab fa-github"></i></a>

@@ -15,6 +15,12 @@ import lombok.Setter;
 import lombok.ToString;
 import lombok.experimental.FieldDefaults;
 
+/**
+ * Properties to be loaded when the application starts.
+ *
+ * @author <a href="mailto:arcswdev@gmail.com">Anantha Raju C</a>
+ *
+ */
 @Entity
 @Table(name = "application_settings")
 @EntityListeners(AuditingEntityListener.class)
