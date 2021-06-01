@@ -51,7 +51,7 @@ Update `chrome.bookmarks.file.windows` in **application.properties** file with y
 
 ## Application screenshots
 
-[![Home](documents/images/app-ui/home.PNG)](documents/images/app-ui/home.PNG)
+[![Home](documents/images/app-ui/home.png)](documents/images/app-ui/home.png)
 
 ## Details
 
