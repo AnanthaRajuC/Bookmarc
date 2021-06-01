@@ -49,6 +49,10 @@
 
 Update `chrome.bookmarks.file.windows` in **application.properties** file with your computer's username.
 
+## Application screenshots
+
+[![Home](documents/images/app-ui/home.PNG)](documents/images/app-ui/home.PNG)
+
 ## Details
 
 - [Technology stack & other Open-source libraries](documents/TECHNOLOGY_STACK.MD)  
