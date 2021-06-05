@@ -56,7 +56,7 @@ public class BookmarkController
 		
 		return "pages/home"; 
 	}
-	
+
 	@GetMapping("/about")
     public String about() 
 	{

@@ -66,13 +66,13 @@ public class BookmarcApplication implements CommandLineRunner
 		
 		OsCheck.getOperatingSystemType();
 
-		log.info("-----> Starting Processing of Bookmarks' file's.");
-		fileServiceImpl.importBrowserBookmark();
-		log.info("-----> Finished Processing of Bookmarks' file's.");
-		
 		log.info("-----> Starting Processing of Live Bookmark's in Chrome Browser");
 		appServiceImpl.BookmarkLiveChromeParser();
 		log.info("-----> Finished Processing of Live Bookmark's in Chrome Browser");
+		
+		/*log.info("-----> Starting Processing of Bookmarks' file's.");
+		fileServiceImpl.importBrowserBookmark();
+		log.info("-----> Finished Processing of Bookmarks' file's.");*/
 
 		if (Desktop.isDesktopSupported() && Desktop.getDesktop().isSupported(Desktop.Action.BROWSE)) 
 		{
