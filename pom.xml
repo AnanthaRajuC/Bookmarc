@@ -4,15 +4,15 @@
 	<modelVersion>4.0.0</modelVersion>
 	
 	<groupId>io.github.anantharajuc</groupId>
-	<artifactId>Bookmarc</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<artifactId>bookmarc</artifactId>
+	<version>latest</version>
 	<packaging>jar</packaging>
 	
 	<name>Bookmarc</name>
 	<url>https://github.com/AnanthaRajuC/Bookmarc</url>
 	<description>Portable Web Browsers&apos; Bookmark&apos;s Manager</description>
 	
-	<!-- Start - Spring Boot Application Template Project Owner -->
+	<!-- Start - Bookmarc Project Owner -->
 	<developers>
 		<developer>
 			<name>Anantha Raju C</name>
@@ -20,22 +20,22 @@
 			<timezone>UTC+05:30</timezone>
 		</developer>
 	</developers>
-	<!-- End - Spring Boot Application Template Project Owner -->
+	<!-- End - Bookmarc Project Owner -->
 	
-	<!-- Start - Spring Boot Application Template source repository -->
+	<!-- Start - Bookmarc source repository -->
     <scm>
         <connection>https://github.com/AnanthaRajuC/Bookmarc.git</connection>
         <developerConnection>git@github.com:AnanthaRajuC/Bookmarc.git</developerConnection>
         <tag>HEAD</tag>
     </scm>
-    <!-- End - Spring Boot Application Template source repository -->
+    <!-- End - Bookmarc source repository -->
     
-    <!-- Start - Spring Boot Application Template issue management -->
+    <!-- Start - Bookmarc issue management -->
     <issueManagement>
         <system>GitHub</system>
         <url>https://github.com/AnanthaRajuC/Bookmarc/issues</url>
     </issueManagement>
-    <!-- End - Spring Boot Application Template issue management -->
+    <!-- End - Bookmarc issue management -->
 	
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -188,6 +188,29 @@
 					</excludes>
 				</configuration>
 			</plugin>
+			<!--  Plugin for building and pushing Docker image to Docker Hub. -->      	        
+	        <plugin>
+				<groupId>com.spotify</groupId>
+				<artifactId>dockerfile-maven-plugin</artifactId>
+				<version>1.4.13</version>
+				<configuration>
+					<repository>anantha/${project.artifactId}</repository>
+					<tag>${project.version}</tag>
+					<buildArgs>
+						<JAR_FILE>target/${project.artifactId}-${project.version}.jar</JAR_FILE>
+					</buildArgs>
+				</configuration>
+				<executions>
+					<execution>
+						<id>default</id>
+						<phase>install</phase>
+						<goals>
+							<goal>build</goal>
+							<goal>push</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>  	        
 		</plugins>
 	</build>
 
