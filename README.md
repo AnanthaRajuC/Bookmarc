@@ -61,7 +61,7 @@ Update `chrome.bookmarks.file.windows` in **application.properties** file with y
 - [Changelog](documents/CHANGELOG.md) 
 - [Internationalization (i18n)](documents/INTERNATIONALIZATION.MD) 
 - [Documentation](documents/DOCUMENTATION.MD) 
-- [Docker](documents/INSTALLATION.md)   
+- [Docker](documents/Docker.md)   
 
 ## Reporting Issues/Suggest Improvements
 
